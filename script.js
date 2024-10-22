@@ -1,4 +1,6 @@
 // FEED LOGIC
+
+    // FEED ITEMS API FETCH
 const feed = document.querySelector(".feed-page-content");
 
 async function getFeedPics() {
@@ -39,7 +41,7 @@ async function getFeedPics() {
 
         <!-- Caption -->
         <div class="caption">
-            <span class="username">${element.author.split(" ").join("_")}</span> This is a sample caption for the Instagram post.
+            <span class="username">${element.author.split(" ").join("_")}</span> I farted.
         </div>
         </div>
       `;
@@ -52,3 +54,17 @@ async function getFeedPics() {
 }
 
 getFeedPics();
+
+    // FEED LOGOUT BUTTON
+const feedLogoutButton = document.querySelector(".feed-page-logout-button");
+
+feedLogoutButton.addEventListener("click", () => {
+    document.location.href = "./index.html";
+})
+
+const accountButton = document.querySelector(".profile-pic-nav");
+
+
+accountButton.addEventListener("click", () => {
+    document.location.href = "./account.html";
+})
