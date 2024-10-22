@@ -77,14 +77,42 @@
 }
 
 .feed-page-content {
-    height: 80%;
+    height: 70%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feed-page-top-nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-underline {
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #ccc; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
 }
 
 .feed-page-header {
     font-family: "Playwrite GB S", cursive;
-    font-size: xxx-large;
+    font-size: large;
     font-weight: bolder;
     width: 100%;
-    text-align: center;
     margin-top: 0;
+    margin-bottom: 0;
+}
+
+.feed-page-content article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feed-page-content img {
+    width: 60%;
 }
