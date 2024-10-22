@@ -17,13 +17,14 @@
     <main class="landing-page-container">
       <section class="login-area">
         <h1 class="landing-page-header">Multigram</h1>
+        <p class="authentication-error-message"></p>
         <form class="login-form">
-          <input type="text" placeholder="Phone number, username or email">
-          <input type="text" placeholder="Password">
-          <button type="submit" class="login-button">Log in</button>
+          <input type="text" placeholder="Phone number, username or email" id="loginUsername" required>
+          <input type="password" placeholder="Password" id="loginPassword" required>
+          <button class="login-button">Log in</button>
         </form>
       </section>
     </main>
-    <script src="script.js"></script>
+    <script src="landingPageScript.js"></script>
   </body>
 </html>
