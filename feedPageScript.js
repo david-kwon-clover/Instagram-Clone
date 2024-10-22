@@ -47,7 +47,6 @@ async function getFeedPics() {
       `;
       feed.appendChild(feedItem);
     });
-    console.log(feedElements);
   } catch (error) {
     console.error(error.message);
   }
